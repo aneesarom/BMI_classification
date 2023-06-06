@@ -1,0 +1,6 @@
+venv
+obesity_classification.egg-info
+dist
+build
+.idea
+.DS_Store

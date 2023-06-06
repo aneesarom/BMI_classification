@@ -1,0 +1,36 @@
+[ 2023-05-30 18:01:22,032 ] 26 root - INFO - Successfully connected to the MongoDB database.
+[ 2023-05-30 18:01:23,601 ] 33 root - INFO - Created the Mushroom Database successfully.
+[ 2023-05-30 18:01:24,003 ] 42 root - INFO - Successfully retrieved data from MongoDB.
+[ 2023-05-30 18:01:24,036 ] 46 root - INFO - Raw data has been saved successfully.
+[ 2023-05-30 18:01:24,037 ] 23 root - INFO - Data ingestion has been initiated
+[ 2023-05-30 18:01:24,049 ] 25 root - INFO - Successfully read data from the artifacts raw data
+[ 2023-05-30 18:01:24,052 ] 27 root - INFO - Train and Test data has been successfully split
+[ 2023-05-30 18:01:24,079 ] 30 root - INFO - Data ingestion has been successfully completed
+[ 2023-05-30 18:01:24,080 ] 50 root - INFO - Data Transformation has been initiated
+[ 2023-05-30 18:01:24,109 ] 58 root - INFO - Train dataframe head: 
+    Unnamed: 0.1  Unnamed: 0 class cap-shape cap-surface cap-color bruises odor gill-attachment gill-spacing gill-size gill-color stalk-shape stalk-root stalk-surface-above-ring stalk-surface-below-ring stalk-color-above-ring stalk-color-below-ring veil-type veil-color ring-number ring-type spore-print-color population habitat
+0          5921        5921     p         x           s         b       t    f               f            c         b          h           t          b                        s                        f                      w                      w         p          w           o         p                 h          v       u
+1          1073        1073     e         x           f         g       t    n               f            c         b          p           t          b                        s                        s                      p                      w         p          w           o         p                 k          y       d
+2          3710        3710     p         x           f         g       f    f               f            c         b          p           e          b                        k                        k                      n                      b         p          w           o         l                 h          v       d
+3           144         144     e         x           y         y       t    a               f            c         b          k           e          c                        s                        s                      w                      w         p          w           o         p                 k          n       g
+4          5469        5469     p         x           y         n       f    y               f            c         n          b           t        NaN                        k                        k                      w                      p         p          w           o         e                 w          v       d
+[ 2023-05-30 18:01:24,112 ] 59 root - INFO - Test dataframe head: 
+    Unnamed: 0.1  Unnamed: 0 class cap-shape cap-surface cap-color bruises odor gill-attachment gill-spacing gill-size gill-color stalk-shape stalk-root stalk-surface-above-ring stalk-surface-below-ring stalk-color-above-ring stalk-color-below-ring veil-type veil-color ring-number ring-type spore-print-color population habitat
+0          1971        1971     e         f           f         n       f    n               f            w         b          h           t          e                        s                        f                      w                      w         p          w           o         e                 n          s       g
+1          6654        6654     p         f           s         e       f    y               f            c         n          b           t        NaN                        s                        s                      p                      p         p          w           o         e                 w          v       l
+2          5606        5606     p         x           y         n       f    f               f            c         n          b           t        NaN                        k                        s                      w                      p         p          w           o         e                 w          v       l
+3          3332        3332     e         f           y         g       t    n               f            c         b          n           t          b                        s                        s                      g                      p         p          w           o         p                 n          y       d
+4          6988        6988     p         f           s         e       f    s               f            c         n          b           t        NaN                        s                        s                      p                      p         p          w           o         e                 w          v       l
+[ 2023-05-30 18:01:24,115 ] 68 root - INFO - Input and Target feature has been successfully split
+[ 2023-05-30 18:01:24,115 ] 42 root - INFO - Preprocessor file has been successfully created
+[ 2023-05-30 18:01:24,176 ] 75 root - INFO - Data Transformation has been successfully completed
+[ 2023-05-30 18:01:24,177 ] 78 root - INFO - Preprocessor picked was successfully saved
+[ 2023-05-30 18:01:24,179 ] 37 root - INFO - train_test_shape: ((5686, 21), (5686,), (2438, 21), (2438,))
+[ 2023-05-30 18:01:24,179 ] 46 root - INFO - Model training has been successfully initiated
+[ 2023-05-30 18:01:24,281 ] 53 root - INFO - Model: lr, F1 macro: 0.9523550880900524
+[ 2023-05-30 18:01:29,107 ] 31 root - INFO - Model: lr, Cv_F1 MACRO MEAN : 0.9590205077785032, Cv_STD DEV: 0.010576452030421648
+[ 2023-05-30 18:01:29,151 ] 53 root - INFO - Model: dt, F1 macro: 1.0
+[ 2023-05-30 18:01:29,872 ] 31 root - INFO - Model: dt, Cv_F1 MACRO MEAN : 1.0, Cv_STD DEV: 0.0
+[ 2023-05-30 18:01:29,872 ] 57 root - INFO - Model training has been successfully completed
+[ 2023-05-30 18:01:29,872 ] 63 root - INFO - Best_model: dt, F1 macro: 1.0
+[ 2023-05-30 18:01:29,874 ] 66 root - INFO - Best model was successfully saved
