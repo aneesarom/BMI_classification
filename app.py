@@ -76,7 +76,6 @@ def new_prediction():
         prediction = 'Normal_Weight'
     elif prediction == 7:
         prediction = 'Insufficient_Weight'
-
     return render_template("result.html", predict=prediction)
 
 
