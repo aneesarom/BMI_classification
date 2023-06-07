@@ -62,22 +62,20 @@ def new_prediction():
     model = PredictionPipeline()
     prediction = model.predict(df)
     prediction = int(prediction[0])
-    print(prediction)
-
-    # if prediction == 1:
-    #     prediction = 'Obesity_Type_I'
-    # elif prediction == 2:
-    #     prediction = 'Obesity_Type_III'
-    # elif prediction == 3:
-    #     prediction = 'Obesity_Type_II'
-    # elif prediction == 4:
-    #     prediction = 'Overweight_Level_I'
-    # elif prediction == 5:
-    #     prediction = 'Overweight_Level_II'
-    # elif prediction == 6:
-    #     prediction = 'Normal_Weight'
-    # elif prediction == 7:
-    #     prediction = 'Insufficient_Weight'
+    if prediction == 1:
+        prediction = 'Obesity_Type_I'
+    elif prediction == 2:
+        prediction = 'Obesity_Type_III'
+    elif prediction == 3:
+        prediction = 'Obesity_Type_II'
+    elif prediction == 4:
+        prediction = 'Overweight_Level_I'
+    elif prediction == 5:
+        prediction = 'Overweight_Level_II'
+    elif prediction == 6:
+        prediction = 'Normal_Weight'
+    elif prediction == 7:
+        prediction = 'Insufficient_Weight'
 
     return render_template("result.html", predict=prediction)
 
