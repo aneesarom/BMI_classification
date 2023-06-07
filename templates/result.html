@@ -63,7 +63,25 @@
     <h1>BMI Classification</h1>
     <div class="results">
       <span class="label">Predicted Classification:</span>
-      <span class="value {{ predict }}">{{ predict }}</span>
+      <span class="value {{ predict }}">
+        {% if predict == 1 %}
+            Obesity_Type_I
+        {% elif predict == 2 %}
+            Obesity_Type_III
+        {% elif predict == 3 %}
+            Obesity_Type_II
+        {% elif predict == 4 %}
+            Overweight_Level_I
+        {% elif predict == 5 %}
+            Overweight_Level_II
+        {% elif predict == 6 %}
+            Normal_Weight
+        {% elif predict == 7 %}
+            Insufficient_Weight
+        {% else %}
+            Invalid prediction value
+        {% endif %}
+    </span>
     </div>
   </body>
 
