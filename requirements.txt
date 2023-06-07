@@ -4,6 +4,5 @@ scikit-learn
 flask
 setuptools
 pymongo
-catboost
 lightgbm
 -e .

@@ -6,7 +6,6 @@ from src.utils.utils import save_object
 from sklearn.metrics import f1_score
 from dataclasses import dataclass
 from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier, GradientBoostingClassifier
-from catboost import CatBoostClassifier
 from lightgbm import LGBMClassifier
 
 
@@ -29,7 +28,6 @@ class ModelTrainer:
                 'etc': ExtraTreesClassifier(random_state=42, n_estimators=201, criterion="gini"),
                 'rfc': RandomForestClassifier(random_state=42, n_estimators=101),
                 'gbc': GradientBoostingClassifier(random_state=42, n_estimators=201),
-                'cat': CatBoostClassifier(verbose=0),
                 "lgbm": LGBMClassifier(random_state=42),
             }
 
